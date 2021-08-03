@@ -1,9 +1,9 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Friend List</h1>
 
-<table>
-  <thead>
+<h1 class="text-center">Friend List</h1>
+<br/>
+<table class="table table-striped table-bordered table-hover">
+  <thead class="table-dark">
     <tr>
       <th>First name</th>
       <th>Last name</th>
@@ -16,8 +16,8 @@
 
   <tbody>
     <% @friends.each do |friend| %>
-      <tr>
-        <td><%= friend.first_name %></td>
+           <tr>
+              <td><%= friend.first_name %></td>
         <td><%= friend.Last_name %></td>
         <td><%= friend.email %></td>
         <td><%= friend.phone %></td>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to 'New Friend', new_friend_path %>
+<%= link_to 'New Friend', new_friend_path, class:"btn btn-secondary" %>
